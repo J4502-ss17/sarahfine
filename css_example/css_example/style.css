@@ -1,0 +1,15 @@
+/*p{
+  color: blue;
+}/*styles go here*/*/
+p {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+body {
+  background-color: #ebe3c3;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+}
