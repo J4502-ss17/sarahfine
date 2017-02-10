@@ -1,19 +1,27 @@
 /*styles go here*/
 
 p {
-  color: #011f4b;
-  font-family: Helvetica, Arial, sans-serif;
+  color: #2F7F74;
+  font-family: "Neuton", Georgia, "Times New Roman", serif;
   text-align: center;
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
   text-align: center;
-  color: #011f4b;
+  color: #007F6E;
 }
 
+h2 {
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #007F6E;
+}
+
+.italic {font-style: italic;}
+
 body {
-  background-color: #d0ebff;
+  background-color: #7FFFF0;
 }
 
 #container {
@@ -39,17 +47,17 @@ body {
 
 #nav a:link, #nav a:visited {
   display: block;
-  color: #d0ebff;
-  background-color: #011f4b;
+  color: #FDFFFD;
+  background-color: #007F6E;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   padding: 4px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
 }
 
 #nav a:hover, #nav a:active {
-  background-color: #7a991a;
+  background-color: #2F7F74;
 }
 
 img {
