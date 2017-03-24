@@ -8,23 +8,40 @@
   <!-- <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <link href="https://fonts.googleapis.com/css?family=Neuton|Raleway:400,400i,700" rel="stylesheet"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <meta http-equiv="content-type"    content="text/html;charset=utf-8" />
 </head>
 
 <body>
-<!--This is a comment. It won't show up in your browser, only in the page source-->
-  <div id="container">
+  <nav>
+    <ul class=navigation>
+      <li><a href="http://www.google.com">Link 1.</a></li>
+      <li><a href="http://www.netflix.com">Link 2.</a></li>
+      <li><a href="Index2.html">Link 3.</a></li>
+      <li><a href="Index2.html">Link 4.</a></li>
+      <li><a href="Index2.html">Link 5.</a></li>
+    </ul>
+  </nav>
+
+<header>
   <h1>This is my first website!</h1>
+</header>
 
-  <p>My name is Sarah Fine. My email address is scfwd5@mail.missouri.edu.</p>
-  <p><span class="italic">Click my photo and send me a message!</span></p>
+<article>
+<div class="wrapper">
+  <div id="container">
+    <p>My name is Sarah Fine. My email address is scfwd5@mail.missouri.edu.</p>
+    <p><span class="italic">Click my photo and send me a message!</span></p>
+    <div class="image">
+      <p><a href="mailto:scfwd5@mail.missouri.edu">
+      <img src="Sarah.jpeg" alt="A picture of me with a pig statue." title="I like pigs, I guess." height="300px"/>
+      </a></p>
+    </div>
+  </div>
 
-  <p><a href="mailto:scfwd5@mail.missouri.edu">
-    <img src="Sarah.jpeg" alt="A picture of me with a pig statue." title="I like pigs, I guess." height="300px"/>
-  </a></p>
-
-  <h2>Want to hear a joke?</h2>
+  <div class="story">
+  <!-- <h2>Want to hear a joke?</h2> -->
   <p>A farmer grows his flock of sheep to 495 and realizes that his sheepdog is ready for retirement, so he goes
     to a pet store and asks the clerk for the best sheepdog he sells.</p>
   <p>"This is the best one," the clerk said. "He speaks four languages, plays chess and recites Shakespeare on command."</p>
@@ -34,12 +51,21 @@
   <p>Impressed, the farmer buys the dog. He takes him to the top of a hill overlooking his pasture to look out over his 495 sheep.</p>
   <p>"Alright, round them up," he tells the dog.</p>
   <p>The dog looks thoughtfully at the flock for a moment before telling the farmer, "You have 500 sheep."</p>
+  </div>
 
-  <ul id="nav">
-    <li><a href="http://www.google.com">This is a link to Google.com.</a></li>
-    <li><a href="http://www.netflix.com">This is a link to Netflix.com.</a></li>
-    <li><a href="Index2.html">Here's the second page of my site.</a></li>
+</article>
+
+<aside>
+  <ul class="aside-1">
+    <p>This is a sidebar.</p>
   </ul>
+</aside>
+
+<aside>
+  <ul class="aside-2">
+    <p>This is also a sidebar.</p>
+  </ul>
+</aside>
 
 </div>
 

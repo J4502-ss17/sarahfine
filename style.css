@@ -33,33 +33,143 @@ body {
   margin: 0 auto;
 }
 
-#nav {
+/*navigation styles*/
+
+.navigation {
+  list-style: none;
+  margin: 0;
   padding: 0;
-  list-style-type: none;
+  display: flex;
+  flex-flow: column;
 }
 
-#nav li {
+.navigation li {
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #FDFFFD;
   margin-bottom: 10px;
 }
 
-#nav a:link, #nav a:visited {
+.navigation a:link, a:visited {
   display: block;
   color: #FDFFFD;
   background-color: #007F6E;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  padding: 4px;
+  padding: 5px;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-}
+/*}
 
-#nav a:hover, #nav a:active {
+#nav a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid black;
+}*/
+
+.navigation a:hover, a:active {
   background-color: #2F7F74;
+  .navigation {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: gray;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+
 }
 
 img {
   border:none;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header, article, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+/*for desktop*/
+
+@media (min-width:800px) {
+
+  .navigation {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  .navigation a {
+    border: none;
+  }
+
+  .navigation a:hover {
+    background: #2F7F74;
+  }
+
+  article {
+  flex: 3 0px;
+  }
+
+  aside {
+    flex: 1 auto;
+  }
+
+.aside-1 {
+  order:1
+}
+
+.aside-2 {
+  order:3
+}
+
+article {
+  order: 2;
+}
+
+
+footer {
+  order: 4;
+}
+
+article {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+/*
+img {
+  width: 45%;
+  object-fit: contain;
+}*/
+
+.image {
+  width: 45%;
+  margin: 10px;
+}
+
+.story {
+  width: 45%;
+}
+
 }
