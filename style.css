@@ -59,7 +59,8 @@ body {
   text-decoration: none;
   padding: 5px;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
-/*}
+  }
+/*
 
 #nav a {
   text-decoration: none;
@@ -72,7 +73,6 @@ body {
 
 .navigation a:hover, a:active {
   background-color: #2F7F74;
-  .navigation {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -94,7 +94,6 @@ body {
     border-bottom: none;
   }
 
-}
 
 img {
   border:none;
