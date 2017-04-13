@@ -26,10 +26,6 @@ body {
 
 #container {
   width: 80%;
-/*  margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;*/
   margin: 0 auto;
 }
 
@@ -43,6 +39,40 @@ body {
   flex-flow: column;
 }*/
 
+nav li {
+    display: block;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 30px;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
+
+header h1 {
+    order: 2;
+    font-size: 2em;
+}
+
+nav ul {
+    display: none;
+}
+
+/*here's where new stuff ends*/
+
 .navigation{
   list-style-type: none;
   display: block;
@@ -55,6 +85,7 @@ body {
 }
 
 .navigation li {
+  display: block;
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #FDFFFD;
@@ -127,6 +158,26 @@ header, article, aside, footer {
 
 @media screen and (min-width:600px) {
 
+  nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        border-top: none;
+    }
+
+    .menu-trigger {
+        display: none;
+    }
+
+    header h1 {
+        order: 1;
+    }
+
+    nav {
+        order: 2;
+    }
+
   .head{
     display:flex;
     flex-flow:row;
@@ -154,6 +205,18 @@ header, article, aside, footer {
 
   .navigation a:hover {
     background: #2F7F74;
+  }
+
+  .menu-trigger {
+      display: none;
+  }
+
+  header h1 {
+      order: 1;
+  }
+
+  nav {
+      order: 2;
   }
 
   article {
